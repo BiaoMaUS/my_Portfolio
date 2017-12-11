@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Et710 Winter is coming</title>
+<style style="text/css">
+.lcdstyle{ /*Example CSS to create LCD countdown look*/
+	background-color:black;
+	color:yellow;
+	font: bold 18px MS Sans Serif;
+	width:400px;
+	padding: 3px;
+}
+.lcdstyle sup{ /*Example CSS to create LCD countdown look*/
+	font-size: 80%
+}
+</style>
+<script type="text/javascript" src="http://www.dynamicdrive.com/dynamicindex6/countdown.js">
+/***********************************************
+* Dynamic Countdown script- (c) Dynamic Drive (http://www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+http://www.dynamicdrive.com/dynamicindex6/dhtmlcount.htm
+***********************************************/
+</script>
+</head>
+<body>
+<h1>Countdown to the end of year 2017</h1>
+<h2><img alt="" src="sad_smiley.jpg"></h2>
+
+<div id="countdowncontainer" class="lcdstyle"></div>
+
+<script>
+
+var countdowncontainer = document.getElementById('countdowncontainer') // reference container 
+
+var futuredate = new cdtime("Jannuary, 01, 2018 00:00:00")
+futuredate.oncountdown = function(ms){
+	if (ms <= 0){ // if time's up
+		countdowncontainer.innerHTML = "Future Date is Here!" // do something
+	}
+	else{
+		var timeleft = cdtime.formatDuration(ms, "days") // format time using formatDuration(timeleftms, "baseunit") function
+		countdowncontainer.innerHTML = timeleft.days + ' Days ' + timeleft.hours + ' Hours ' + timeleft.minutes + ' Minutes ' + timeleft.seconds + ' Seconds '
+	}
+}
+futuredate.start()
+
+</script>
+
+
+
+
+</body>
+
+</html>

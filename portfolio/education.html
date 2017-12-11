@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>image/&nbsp; Contack with me</title>
+<style type="text/css">
+.auto-style1 {
+	border: 2px solid #0000FF;
+}
+</style>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+
+
+	
+	$('.dropbtnone').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentone').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+   });
+    
+    //$('.dropdown-contentone').on('mouseout', function(){
+	//$('.dropdown-contentone').hide();
+    //});
+
+    //-----
+    
+   // $('.dropdown-contenttwo').hide();
+	$('.dropbtntwo').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contenttwo').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+    });
+    
+    //   $('h3').on('mouseout', function(){
+	//$('.dropdown-contenttwo').hide();
+   // });
+
+//
+
+//----
+//$('.dropdown-contentthree').hide();
+	$('.dropbtnthree').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentthree').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentthree').hide();
+    });
+//
+//
+//$('.dropdown-contentfour').hide();
+	$('.dropbtnfour').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfour').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentfour').hide();
+    });
+//
+//
+//$('.dropdown-contentfive').hide();
+	$('.dropbtnfive').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentone').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfive').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentfive').hide();
+    });
+
+//$('#myDropdown').children().css('display','block');	
+
+    	})
+/*$(document).on('ready', function(){
+$('p').hide();
+$('h3').on('click', function(){
+$('p').hide();
+$(this).next().show();
+});
+});*/
+
+
+</script>
+<style>
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+ .dropbtn:hover,
+  :focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentone {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: #f9f9f9;
+    max-width: 80px;
+    overflow: auto;
+    float:left;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+.dropdown-contentthree {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contentfour {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+.dropdown-contentfive {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+ .dropdown-content a {display:block;}
+
+
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+td{
+border:1px solid #0088dd;
+	
+}
+table{
+	
+	border-collapse:collapse;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="top">
+<div id="logo">
+<img src="image/mabiao.jpg" height="200px" width="100px" />
+</div>
+<div id="social-media">
+<p> Contack with me</p>
+<ul>
+<li> <a href="https://twitter.com/share?count=none&hashtags=MyProfolio" class="twitter-share-button" data-lang="en">
+				<img class="errorpage-bird"  src="https://abs.twimg.com/errors/logo23x19.png"</a>
+</li>
+<li><a class="devsite-product-name-link gc-analytics-event"
+       href="https://developers.google.com/+/"
+       data-category="Site-Wide Custom Events"
+       data-label="Project logo (header)"><img src="https://developers.google.com/site-assets/logo-google-plus.svg" class="devsite-product-logo"
+               alt="Google+ Platform"></a>
+</li>
+<li class="quickLinksTest">
+                            
+	<a href="https://www.facebook.com/profile.php?id=100004577539472">
+		<div class="container">
+			<img src="image/facebook.JPG" alt="Avatar" class="image">
+			
+		</div>
+                        </li>
+
+</ul>
+</div>
+</div>
+<div id="topnav">
+<ul>
+<div class="dropdown">
+<li><a class="dropbtnone"href="index.html">welcome</a></li>
+<div id="myDropdown" class="dropdown-contentone">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+ <div class="dropdown">
+<li><a class="dropbtntwo" href="about me.html">about me</a></li>
+<div id="myDropdown" class="dropdown-contenttwo">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+</div>
+<div class="dropdown">
+
+<li><a  class="dropbtnthree"href="education.html">education</a></li>
+<div id="myDropdown" class="dropdown-contentthree">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+</div>
+<div class="dropdown">
+
+<li><a class="dropbtnfour"href="technical.html">technical</a></li>
+<div id="myDropdown" class="dropdown-contentfour">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+</div>
+ </div>
+<div class="dropdown">
+
+<li><a class="dropbtnfive"href="contactme.html">contact me</a></li>
+<div id="myDropdown" class="dropdown-contentfive">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+</div>
+ </div>
+
+
+
+</ul>
+</div>
+<div id="content" align="center">
+<h1>educationMy </h1>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<table cellpadding="2" class="auto-style1" style="width: 90%; height: 400px">
+		<tr>
+			<td><h2>country</h2></td>
+			<td><h2>school</h2></td>
+			<td><h2>period</h2></td>
+			<td><h2>major</h2>r</td>
+		</tr>
+		<tr>
+			<td><h3>China</h3></td>
+			<td><h3>Tarium university</h3></td>
+			<td><h3>1993-1998</h3></td>
+			<td><h3>veterinary</h3></td>
+		</tr>
+		<tr>
+			<td><h3>Germany</h3></td>
+			<td><h3>Carl-duisberg College</h3></td>
+			<td><h3>1998-2000</h3></td>
+			<td><h3>veterinary program</h3></td>
+		</tr>
+		<tr>
+			<td><h3>USA</h3></td>
+			<td><h3>Laguardia college</h3></td>
+			<td><h3>2014-2017</h3></td>
+			<td><h3>computer science</h3></td>
+		</tr>
+		<tr>
+			<td><h3>USA</h3></td>
+			<td><h3>QCC </h3></td>
+			<td><h3>2017Aug-now</h3></td>
+			<td><h3>Web-develop program</h3></td>
+		</tr>
+
+	</table>
+
+	
+<br />
+<br />
+
+<br/>
+<br />
+
+</div>
+<div id="footer">
+<p>&copy;Copyright 2017 November by BiaoMa</p>
+</div>
+</div>
+</body>
+
+</html>

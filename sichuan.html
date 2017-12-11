@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<style type="text/css">
+img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+</head>
+
+<body>
+
+<p>
+<map id="ImgMap0" name="ImgMap0">
+	<area coords="359, 460, 378, 485, 376, 490, 380, 525, 385, 541, 397, 538, 397, 547, 412, 560, 424, 583, 436, 577, 444, 571, 442, 557, 453, 541, 462, 537, 468, 548, 479, 552, 494, 546, 484, 538, 490, 531, 476, 514, 483, 509, 479, 504, 488, 499, 502, 504, 508, 493, 518, 485, 524, 470, 491, 463, 478, 461, 464, 452, 472, 461, 462, 458, 455, 455, 442, 439, 433, 440, 438, 454, 421, 455, 414, 458, 406, 463, 395, 453, 379, 453, 370, 452, 362, 454" href="sichuan.html" shape="poly" />
+	<area alt="" coords="137, 207, 141, 239, 136, 244, 133, 252, 126, 260, 102, 268, 82, 266, 70, 274, 63, 270, 52, 270, 42, 273, 36, 281, 34, 293, 45, 300, 44, 320, 36, 326, 51, 351, 70, 367, 89, 362, 104, 376, 124, 384, 147, 378, 164, 387, 184, 384, 214, 373, 249, 386, 264, 384, 259, 376, 269, 362, 260, 357, 258, 349, 272, 335, 305, 334, 308, 305, 346, 285, 350, 275, 338, 243, 311, 230, 278, 218, 286, 201, 275, 174, 263, 170, 248, 150, 249, 145, 240, 146, 234, 156, 225, 157, 220, 164, 217, 179, 209, 180, 199, 179, 188, 174, 184, 179, 174, 201, 177, 206, 165, 205, 155, 203" href="xinjiang.html" shape="poly" />
+	<area alt="" coords="677, 608, 664, 588, 637, 598, 628, 597, 634, 583, 614, 583, 608, 591, 597, 591, 594, 600, 590, 599, 586, 623, 585, 636, 572, 650, 561, 662, 559, 673, 568, 684, 574, 676, 568, 668, 623, 641, 619, 629, 634, 636, 660, 622" href="shenzhen.html" shape="poly" />
+</map>
+<img alt="" height="825" src="china-provinces-map-municipalities_autonomous_regions.jpg" usemap="#ImgMap0" width="855" /></p>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript"src="js/hoot.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+</body>
+
+</html>

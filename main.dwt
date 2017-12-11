@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <!-- #BeginEditable "doctitle" -->
+
+    <title>Justified Nav Template for Bootstrap 3.0.0 Documentation - BootstrapDocs</title>
+
+    <!-- #EndEditable -->
+
+    <!-- Bootstrap core CSS -->
+    <!--link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--link href="css/justified-nav.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    
+   <!--slide css-->
+   <style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}/* Fading animation */
+.fade {
+
+
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style> 
+   
+
+<!--  new coding-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+ <script>
+$(document).ready(function(){
+
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+
+
+	
+	$('.dropbtnone').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentone').show();
+    //$(this).next().children().show();
+	});
+	$('.slideshow-container').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+   });
+    
+    //$('.dropdown-contentone').on('mouseout', function(){
+	//$('.dropdown-contentone').hide();
+    //});
+
+    //-----
+    
+   // $('.dropdown-contenttwo').hide();
+	$('.dropbtntwo').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contenttwo').show();
+    //$(this).next().children().show();
+	});
+	$('.slideshow-container').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+    });
+    
+    //   $('h3').on('mouseout', function(){
+	//$('.dropdown-contenttwo').hide();
+   // });
+
+//
+
+//----
+//$('.dropdown-contentthree').hide();
+	$('.dropbtnthree').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentthree').show();
+    //$(this).next().children().show();
+	});
+	$('.slideshow-container').on('mouseenter', function(){
+	$('.dropdown-contentthree').hide();
+    });
+//
+//
+//$('.dropdown-contentfour').hide();
+	$('.dropbtnfour').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfour').show();
+    //$(this).next().children().show();
+	});
+	$('.slideshow-container').on('mouseenter', function(){
+	$('.dropdown-contentfour').hide();
+    });
+//
+//
+//$('.dropdown-contentfive').hide();
+	$('.dropbtnfive').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentone').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfive').show();
+    //$(this).next().children().show();
+	});
+	$('.slideshow-container').on('mouseenter', function(){
+	$('.dropdown-contentfive').hide();
+    });
+
+//$('#myDropdown').children().css('display','block');	
+
+    	})
+/*$(document).on('ready', function(){
+$('p').hide();
+$('h3').on('click', function(){
+$('p').hide();
+$(this).next().show();
+});
+});*/
+
+
+</script>
+<style>
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+ .dropbtn:hover,
+  :focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentone {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    overflow: auto;
+    
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    top: 30px;
+
+    background-color: #f9f9f9;
+    max-width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+.dropdown-contentthree {
+    display: none;
+    position: absolute;
+    top: 30px;
+
+    background-color: #f9f9f9;
+    max-width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contentfour {
+    display: none;
+    position: absolute;
+    top: 30px;
+
+    background-color: #f9f9f9;
+    max-width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+.dropdown-contentfive {
+    display: none;
+    position: absolute;
+    top: 30px;
+
+    background-color: #f9f9f9;
+    max-width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+ .dropdown-content a {display:block;}
+
+
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+.text{
+	color:red;
+}
+</style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/justified-nav.css" rel="stylesheet">
+
+  
+ 
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h1 class="text-muted">My First Website</h1>
+
+        <br/>
+       
+        <ul class="nav nav-justified">
+        <div class="dropdown">
+<li><a class="dropbtnone"href="index.html"><h4>My Home page</h4></a></li>
+<br/>
+<div id="myDropdown" class="dropdown-contentone">
+    <a href="index.html"><h3>My Home page</h3></a>
+ <a href="poj.html"><h3>Project'sJavascript</h3></a>
+<a href="pohc.html"><h3>Project'sHtml&Css</h3></a>
+<a href="mc.html"><h3>My carrer Portfolio</h3></a>
+<a href="contact me.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+  <div class="dropdown">
+<li><a class="dropbtntwo"href="poj.html"><h4>Projects of Javascript</h4></a></li>
+<div id="myDropdown" class="dropdown-contenttwo">
+    <a href="index.html"><h3>My Home page</h3></a>
+ <a href="poj.html"><h3>Projects'Javascript</h3></a>
+<a href="pohc.html"><h3>Projects'Html&Css</h3></a>
+<a href="mc.html"><h3>My carrer Portfolio</h3></a>
+<a href="contact me.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+
+      <div class="dropdown">
+<li><a class="dropbtnthree"href="pohc.html"><h4>Projects of Html&Css</h4></a></li>
+<br/>
+<div id="myDropdown" class="dropdown-contentthree">
+    <a href="index.html"><h3>My Home page</h3></a>
+ <a href="poj.html"><h3>Projects'Javascript</h3></a>
+<a href="pohc.html"><h3>Projects'Html&Css</h3></a>
+<a href="mc.html"><h3>My carrer Portfolio</h3></a>
+<a href="contact me.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+ 
+   <div class="dropdown">
+<li><a class="dropbtnfour"href="mc.html"><h4>Carrer portfolio</h4></a></li>
+<div id="myDropdown" class="dropdown-contentfour">
+    <a href="index.html"><h3>My Home page</h3></a>
+ <a href="poj.html"><h3>Projects'Javascript</h3></a>
+<a href="pohc.html"><h3>Projects'Html&Css</h3></a>
+<a href="mc.html"><h3>My carrer Portfolio</h3></a>
+<a href="contact me.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+  <div class="dropdown">
+<li><a class="dropbtnfive"href="contact me.html"><h4>contact me</h4></a></li>
+<br/>
+<div id="myDropdown" class="dropdown-contentfive">
+    <a href="index.html"><h3>My Home page</h3></a>
+ <a href="poj.html"><h3>Projects'Javascript</h3></a>
+<a href="pohc.html"><h3>Projects'Html&Css</h3></a>
+<a href="mc.html"><h3>My carrer Portfolio</h3></a>
+<a href="contact me.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+
+     <!-- <li class="active"><a href="#">My HOme Page</a></li>
+          <li><a href="#">Projects of Javascript</a></li>
+          <li><a href="#">Projects of Html&Css</a></li>
+          <li><a href="#">My carrer Portfolio</a></li>
+          <!--<li><a href="#">About</a></li>-->
+       <!--   <li><a href="#">Contact Me</a></li>-->
+        </ul>
+      </div>
+<!--slide-->
+
+<div class="slideshow-container" style="left: -2px; top: 29px; width: 1304px; height: 54px">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text"><h2>China</h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_fjords_wide.jpg" style="width:100%">
+  <div class="text"><h2>Germany</h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <br/>
+  <br/>
+  <div class="text"><h2>USA</h2></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <!-- #BeginEditable "content%20here" -->
+        <h2>Welcome to my homepage!</h2>
+        <p class="lead">My name is BiaoMa.I come from China. I was a veterinarin in China. I have been in USA for 5 years. Since I touched coding,
+        I had loved coding and had learned computer science in Laguardia community college for 2 years. I have an American dream that is becoming a 
+        programmer. I leared C++&Java. I am learning Javascript and Html&css. First step I want to become a web developer. next step becoming a soft
+        engineer. At end I become a programmer for Artificial Intelligence.Please give me a chance for internship in your company.
+          </p>
+        <!-- #EndEditable -->
+        <!--<p><a class="btn btn-lg btn-success" href="#">Get started today</a> -->
+      </div>
+
+     <!-- <!-- Example row of columns -->
+      <!--<div class="row">
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+      </div>-->
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Company 2017</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster --><!--a href="css/bootstrap.css">
+																	   myFirstWebSite/css/bootstrap.css</a-->
+    <!--script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
+
+
+  </body>
+</html>

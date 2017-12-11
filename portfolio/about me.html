@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "main.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>image/&nbsp; Contack with me</title>
+<!-- #EndEditable -->
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+
+
+	
+	$('.dropbtnone').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentone').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+   });
+    
+    //$('.dropdown-contentone').on('mouseout', function(){
+	//$('.dropdown-contentone').hide();
+    //});
+
+    //-----
+    
+   // $('.dropdown-contenttwo').hide();
+	$('.dropbtntwo').on('mouseenter', function(){
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contenttwo').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+    });
+    
+    //   $('h3').on('mouseout', function(){
+	//$('.dropdown-contenttwo').hide();
+   // });
+
+//
+
+//----
+//$('.dropdown-contentthree').hide();
+	$('.dropbtnthree').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentthree').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentthree').hide();
+    });
+//
+//
+//$('.dropdown-contentfour').hide();
+	$('.dropbtnfour').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentone').hide();
+	$('.dropdown-contentfive').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfour').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentfour').hide();
+    });
+//
+//
+//$('.dropdown-contentfive').hide();
+	$('.dropbtnfive').on('mouseenter', function(){
+	$('.dropdown-contenttwo').hide();
+	$('.dropdown-contentthree').hide();
+	$('.dropdown-contentfour').hide();
+	$('.dropdown-contentone').hide();
+
+
+	//add
+	//--$('.dropdown-content').hide();
+	 $('.dropdown-contentfive').show();
+    //$(this).next().children().show();
+	});
+	$('#content').on('mouseenter', function(){
+	$('.dropdown-contentfive').hide();
+    });
+
+//$('#myDropdown').children().css('display','block');	
+
+    	})
+/*$(document).on('ready', function(){
+$('p').hide();
+$('h3').on('click', function(){
+$('p').hide();
+$(this).next().show();
+});
+});*/
+
+
+</script>
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+ .dropbtn:hover,
+  :focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentone {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: #f9f9f9;
+    max-width: 80px;
+    overflow: auto;
+    float:left;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+.dropdown-contentthree {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+.dropdown-contentfour {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+.dropdown-contentfive {
+    display: none;
+    position: absolute;
+    top: 20px;
+
+    background-color: #f9f9f9;
+    max-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  z-index: 1;
+
+}
+
+
+ .dropdown-content a {display:block;}
+
+
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+<!--.sliderImage span{
+position:absolute;
+padding:10px;
+width:300px;
+height:300px;
+background-color:#000;
+filter:alpha(opacity=70);-moz-opacity:0.7;opacity:0.7;
+font-family Arial,Helvetica,sans-serif;
+font-size:12px;
+line-height:150%;
+color:#fff;
+display:none;
+}
+.sliderImage span strong{
+color:#FF9428;
+font-size:22px;
+line-height:300%;
+}
+<!--.sliderImage{
+float:left;
+position:relative;
+display:block;
+}-->
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="top">
+<div id="logo">
+<img src="image/mabiao.jpg" height="200px" width="100px" />
+</div>
+<div id="social-media">
+<p> Contack with me</p>
+<ul>
+<li> <a href="https://twitter.com/share?count=none&hashtags=MyProfolio" class="twitter-share-button" data-lang="en">
+				<img class="errorpage-bird"  src="https://abs.twimg.com/errors/logo23x19.png"</a>
+</li>
+<li><a class="devsite-product-name-link gc-analytics-event"
+       href="https://developers.google.com/+/"
+       data-category="Site-Wide Custom Events"
+       data-label="Project logo (header)"><img src="https://developers.google.com/site-assets/logo-google-plus.svg" class="devsite-product-logo"
+               alt="Google+ Platform"></a>
+</li>
+<li class="quickLinksTest">
+                            
+	<a href="https://www.facebook.com/profile.php?id=100004577539472">
+		<div class="container">
+			<img src="image/facebook.JPG" alt="Avatar" class="image">
+			
+		</div>
+                        </li>
+</ul>
+</div>
+</div>
+<div id="topnav">
+<ul>
+<div class="dropdown">
+<li><a class="dropbtnone"href="index.html">welcome</a></li>
+<div id="myDropdown" class="dropdown-contentone">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+ </div>
+ <div class="dropdown">
+<li><a class="dropbtntwo" href="about me.html">about me</a></li>
+<div id="myDropdown" class="dropdown-contenttwo">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+</div>
+<div class="dropdown">
+
+<li><a  class="dropbtnthree"href="education.html">education</a></li>
+<div id="myDropdown" class="dropdown-contentthree">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+
+ </div>
+</div>
+<div class="dropdown">
+
+<li><a class="dropbtnfour"href="technical.html">technology</a></li>
+<div id="myDropdown" class="dropdown-contentfour">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+</div>
+ </div>
+<div class="dropdown">
+
+<li><a class="dropbtnfive"href="contactme.html">contact me</a></li>
+<div id="myDropdown" class="dropdown-contentfive">
+    <a href="index.html"><h3>welcome</h3></a>
+ <a href="about me.html"><h3>about me</h3></a>
+<a href="education.html"><h3>education</h3></a>
+<a href="technical.html"><h3>technology</h3></a>
+<a href="contactme.html"><h3>contact me</h3></a>
+
+</div>
+ </div>
+
+
+
+</ul>
+</div>
+<!-- #BeginEditable "content" -->
+<div id="content">
+<h1>about me:a long-distance runner</h1>
+
+
+<img width='98%'src="image/running.jpg" alt="a long distance rnner" align="left"/>
+<!--<span class='top'><strong>My personality</strong><br/>pppp</span>-->
+<br/>
+<br/>
+
+<h2> My favorite sport is running because it lets me own a persistence willpower. </h2>
+<br/>
+<h2> I love to learn the newest  computer technology, such as programming language.</h2>
+<br/>
+<h2> My American Dream is becoming a programmer.</h2>
+<br />
+<br />
+
+
+</div>
+<!-- #EndEditable -->
+<div id="footer">
+<p>&copy;Copyright 2017 November by BiaoMa</p>
+</div>
+</div>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
